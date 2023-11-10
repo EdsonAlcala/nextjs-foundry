@@ -1,6 +1,16 @@
 {
-  "name": "my-boilerplate",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT"
+  "name": "base-boilerplate",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "yarn workspaces -pt run dev",
+    "build": "yarn workspaces -pt run build",
+    "test": "yarn workspaces -pt run test"
+  },
+  "dependencies": {},
+  "devDependencies": {}
 }
