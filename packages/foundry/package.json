@@ -1,0 +1,11 @@
+{
+    "name": "foundry",
+    "version": "0.0.1",
+    "scripts": {
+        "compile": "forge compile",
+        "lint": "forge fmt",
+        "test": "forge test"
+    },
+    "devDependencies": {},
+    "dependencies": {}
+}
