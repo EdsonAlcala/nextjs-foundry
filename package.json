@@ -7,6 +7,7 @@
     "packages/*"
   ],
   "scripts": {
+    "start": "yarn workspaces -pt run start",
     "dev": "yarn workspaces -pt run dev",
     "build": "yarn workspaces -pt run build",
     "test": "yarn workspaces -pt run test"
