@@ -6,7 +6,9 @@
         "compile": "forge compile",
         "lint": "forge fmt",
         "test": "forge test",
-        "dev": "forge compile"
+        "dev": "forge compile",
+        "chain": "anvil --config-out localhost.json",
+        "fork": "anvil --fork-url ${0:-mainnet} --chain-id 31337 --config-out localhost.json"
     },
     "devDependencies": {},
     "dependencies": {}

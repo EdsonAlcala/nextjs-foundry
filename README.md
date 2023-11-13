@@ -1,28 +1,18 @@
 # Build On Base Boilerplate (BoBB)
 
-Simple and minimalistic Next.js + Foundry boilerplate to start developing on Base.
+Simple, minimalistic and opinionated Next.js + Foundry boilerplate to start developing on Base.
 
-The project contains ....
-
-op-viem
-
-op-wagmi
-
-Opinionated
-
-<!-- <TODO: add image or .gif> -->
-
-<!-- TODO: INCLUDE something related to: 
-By building a developer-first wallet, we can encourage developers to follow the best practice of introspection, testing, debugging against a local (forked) Ethereum node. -->
+This boilerplate is designed to be used to develop DApps using Foundry, Next JS, Anvil, RainbowKit, Rivet. This means you will test against a local forked Base node.
 
 ### Requirements
 
 - [NVM](https://github.com/nvm-sh/nvm)
+- [Yarn](https://yarnpkg.com/)
 - [Foundry](https://github.com/foundry-rs/foundry)
+- [Alchemi provider](https://www.alchemy.com/)
+- [Wallet connect id](https://cloud.walletconnect.com/sign-in)
 
-To include an alchemy provider is required
-To include a note about wallet connect id
-<!-- Note: Every dApp that relies on WalletConnect now needs to obtain a projectId from WalletConnect Cloud. This is absolutely free and only takes a few minutes. -->
+*Note: Since it is free and only takes a few minutes, we recommend getting a projectId from WalletConnect Cloud.
 
 ## Architecture 📦
 
@@ -39,12 +29,36 @@ The project consist of 2 packages:
 ### Getting started
 
 ```bash
-$ git clone <TODO>
+$ git clone https://github.com/edsonalcala/base-boilerplate
 
 $ nvm use
 
 $ yarn
 ```
 
-Known issues
+### Start Anvil
+
+https://book.getfoundry.sh/reference/anvil/
+
+### Developing with Rivet
+
+We recommend https://www.paradigm.xyz/2023/08/rivet
+
+### Roadmap
+
+[] Add gif image in the README
+[] Add support for op-wagmi
+
+### Known issues
+
 https://github.com/foundry-rs/forge-std/issues/170
+https://github.com/foundry-rs/foundry/issues/2714
+
+https://github.com/nomad-xyz/monorepo
+
+### References
+
+https://nextjs.org/docs/getting-started/installation
+
+https://www.rainbowkit.com/docs/installation#further-examples
+
