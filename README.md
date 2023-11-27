@@ -51,10 +51,6 @@ yarn deploy
 yarn start
 ```
 
-### Start Anvil
-
-https://book.getfoundry.sh/reference/anvil/
-
 ## Roadmap
 
 [ ] Include Deployment Script + Wagmi integration
@@ -82,12 +78,6 @@ https://book.getfoundry.sh/reference/anvil/
 - [Nomad](https://github.com/nomad-xyz/monorepo)
 - [Prb-Math](https://github.com/PaulRBerg/prb-math)
 - [Optimism Starter](https://github.com/ethereum-optimism/optimism-starter)
-
-## Known issues
-
-https://github.com/foundry-rs/forge-std/issues/170
-https://github.com/foundry-rs/foundry/issues/2714
-https://github.com/nomad-xyz/monorepo
 
 ## References
 
