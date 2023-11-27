@@ -1,16 +1,16 @@
 # Build On Base Boilerplate (BoBB)
 
-Simple, minimalistic and opinionated [Next.js] + Foundry boilerplate to start developing on Base.
+Simple, minimalistic and opinionated [Next.js] + [Foundry] boilerplate to start developing on Base.
 
-This boilerplate is designed to be used to develop DApps using Foundry, Next JS, Anvil, [RainbowKit] and Rivet. This means you will test against a local forked Base node.
+This boilerplate is designed to be used to develop DApps using Foundry, Next JS, Anvil, [RainbowKit] and [Rivet]. This means you will test against a local forked Base node.
 
 ## Requirements
 
 - [NVM]
-- [Yarn](https://yarnpkg.com/)
-- [Foundry](https://github.com/foundry-rs/foundry)
-- [Alchemi provider](https://www.alchemy.com/)
-- [Wallet connect id](https://cloud.walletconnect.com/sign-in)
+- [Yarn]
+- [Foundry]
+- [Alchemi provider]
+- [Wallet connect id]
 
 *Note: Since WalletConnect requires a projectId and it is free and easy to get, we recommend getting a projectId from WalletConnect Cloud.
 
@@ -26,7 +26,7 @@ The project consist of 2 packages:
 1. Clone the repository and install dependencies
 
 ```bash
-$ git clone https://github.com/edsonalcala/base-boilerplate
+$ git clone https://github.com/edsonalcala/dapp-boilerplate
 
 $ nvm use
 
@@ -59,13 +59,13 @@ yarn start
 
 [ ] Add support for op-wagmi
 
-[ ] Setup docs with Tailwind?? I guess with Hugo?
+[ ] Setup docs with Hugo
 
 [ ] Add gif image in the README
 
 [ ] Include integration with [Rivet]
 
-[ ] Integrate React Toast or 
+[ ] Integrate [React hot toast] or [React toastify]
 
 [ ] Include [Tailwind] examples
 
@@ -79,7 +79,7 @@ yarn start
 - [Prb-Math](https://github.com/PaulRBerg/prb-math)
 - [Optimism Starter](https://github.com/ethereum-optimism/optimism-starter)
 
-## References
+<!-- ## References -->
 
 [Next.js]: https://nextjs.org/docs/getting-started/installation
 [RainbowKit]: https://www.rainbowkit.com/docs/installation#further-examples
@@ -90,3 +90,5 @@ yarn start
 [Alchemi provider]: https://www.alchemy.com/
 [Wallet connect id]: https://cloud.walletconnect.com/sign-in
 [Rivet]: https://www.paradigm.xyz/2023/08/rivet
+[React toastify]: https://www.npmjs.com/package/react-toastify
+[React hot toast]: https://react-hot-toast.com/
