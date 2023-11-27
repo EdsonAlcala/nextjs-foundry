@@ -2,6 +2,11 @@
 src = "contracts"
 out = "out"
 libs = ["lib"]
+solc_version = "0.8.19" # Version of solc that we use
+optimizer = true        # Enable or disable the solc optimizer
+optimizer_runs = 999999 # The number of optimizer runs
+verbosity = 3           # The verbosity of tests
+
 remappings = ["forge-std/=lib/forge-std/src/", "@contracts/=contracts/"]
 fs_permissions = [{ access = "read-write", path = "./" }]
 

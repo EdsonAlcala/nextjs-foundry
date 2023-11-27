@@ -7,9 +7,12 @@
     "packages/*"
   ],
   "scripts": {
+    "chain": "anvil --config-out localhost.json",
+    "fork": "anvil --fork-url ${0:-mainnet} --chain-id 31337 --config-out localhost.json",
     "dev": "yarn workspaces -pt run dev",
     "build": "yarn workspaces -pt run build",
-    "test": "yarn workspaces -pt run test"
+    "test": "yarn workspaces -pt run test",
+    "deploy": "yarn workspace foundry run deploy "
   },
   "dependencies": {},
   "devDependencies": {}

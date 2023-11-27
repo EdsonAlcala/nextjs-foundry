@@ -23,6 +23,8 @@ The project consist of 2 packages:
 
 ## Getting started
 
+1. Clone the repository and install dependencies
+
 ```bash
 $ git clone https://github.com/edsonalcala/base-boilerplate
 
@@ -31,16 +33,35 @@ $ nvm use
 $ yarn
 ```
 
+2. Start Anvil by running:
+
+```bash
+yarn chain
+```
+
+3. On a second terminal, deploy the smart contracts contract to the local `Anvil` instance.
+
+```bash
+yarn deploy
+```
+
+4. On a new terminal, start the NextJS app by running:
+
+```bash
+yarn start
+```
+
 ### Start Anvil
 
 https://book.getfoundry.sh/reference/anvil/
 
 ## Roadmap
 
-[] Add gif image in the README
-[] Add support for op-wagmi
+[] Include Deployment Script + Wagmi integration
 [] Add deploy to vercel button
-[] Setup docs with Tailwind
+[] Add support for op-wagmi
+[] Setup docs with Tailwind?? I guess with Hugo?
+[] Add gif image in the README
 [] Include integration with [Rivet]
 [] Integrate React Toast or 
 [] Include [Tailwind] examples

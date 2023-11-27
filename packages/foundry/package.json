@@ -8,7 +8,8 @@
         "test": "forge test",
         "dev": "forge compile",
         "chain": "anvil --config-out localhost.json",
-        "fork": "anvil --fork-url ${0:-mainnet} --chain-id 31337 --config-out localhost.json"
+        "fork": "anvil --fork-url ${0:-mainnet} --chain-id 31337 --config-out localhost.json",
+        "deploy": "forge deploy --config localhost.json"
     },
     "devDependencies": {},
     "dependencies": {}
