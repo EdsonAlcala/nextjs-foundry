@@ -10,7 +10,7 @@ This boilerplate is designed to be used to develop DApps using Foundry, Next JS,
 - [Yarn](https://yarnpkg.com/)
 - [Foundry](https://github.com/foundry-rs/foundry)
 - [Alchemi provider](https://www.alchemy.com/)
-- [Wallet connect id](https://cloud.walletconnect.com/sign-in)
+- **[Wallet connect id](https://cloud.walletconnect.com/sign-in)
 
 *Note: Since it is free and only takes a few minutes, we recommend getting a projectId from WalletConnect Cloud.
 
@@ -39,7 +39,7 @@ $ yarn
 yarn chain
 ```
 
-3. On a second terminal, deploy the smart contracts contract to the local `Anvil` instance.
+3. On a second terminal, deploy the smart contracts contract to the local `Anvil` instance by running:
 
 ```bash
 yarn deploy
