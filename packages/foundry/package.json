@@ -7,9 +7,8 @@
         "lint": "forge fmt",
         "test": "forge test",
         "dev": "forge compile",
-        "chain": "anvil --config-out localhost.json",
-        "fork": "anvil --fork-url ${0:-mainnet} --chain-id 31337 --config-out localhost.json",
-        "deploy": "forge deploy --config localhost.json"
+        "chain": "source .env && anvil -m \"$MNEMONIC\"",
+        "deploy": "source .env && forge script script/Deploy.s.sol --rpc-url http://localhost:8545 --broadcast"
     },
     "devDependencies": {},
     "dependencies": {}

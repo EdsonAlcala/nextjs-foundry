@@ -57,14 +57,23 @@ https://book.getfoundry.sh/reference/anvil/
 
 ## Roadmap
 
-[] Include Deployment Script + Wagmi integration
-[] Add deploy to vercel button
-[] Add support for op-wagmi
-[] Setup docs with Tailwind?? I guess with Hugo?
-[] Add gif image in the README
-[] Include integration with [Rivet]
-[] Integrate React Toast or 
-[] Include [Tailwind] examples
+[ ] Include Deployment Script + Wagmi integration
+
+[ ] Add deploy to vercel button
+
+[ ] Add support for op-wagmi
+
+[ ] Setup docs with Tailwind?? I guess with Hugo?
+
+[ ] Add gif image in the README
+
+[ ] Include integration with [Rivet]
+
+[ ] Integrate React Toast or 
+
+[ ] Include [Tailwind] examples
+
+[ ] Include fork mode
 
 ## Inspiration
 
