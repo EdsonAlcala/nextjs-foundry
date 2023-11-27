@@ -10,9 +10,9 @@ This boilerplate is designed to be used to develop DApps using Foundry, Next JS,
 - [Yarn](https://yarnpkg.com/)
 - [Foundry](https://github.com/foundry-rs/foundry)
 - [Alchemi provider](https://www.alchemy.com/)
-- [Wallet connect id](https://cloud.walletconnect.com/sign-in)*
+- [Wallet connect id](https://cloud.walletconnect.com/sign-in)
 
-*Note: Since it is free and only takes a few minutes, we recommend getting a projectId from WalletConnect Cloud.
+*Note: Since WalletConnect requires a projectId and it is free and easy to get, we recommend getting a projectId from WalletConnect Cloud.
 
 ## Architecture 📦
 
