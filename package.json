@@ -9,7 +9,7 @@
   "scripts": {
     "chain": "source .env && yarn workspace foundry run chain",
     "deploy": "source .env && yarn workspace foundry run deploy",
-    "dev": "source .env && yarn workspace next run dev"
+    "dev": "source .env && yarn workspace app run dev"
   },
   "dependencies": {},
   "devDependencies": {}
