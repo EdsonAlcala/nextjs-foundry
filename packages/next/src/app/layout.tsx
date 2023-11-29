@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import Web3Provider from '@app/web3/provider';
 
 import '@rainbow-me/rainbowkit/styles.css';
 import './globals.css'
@@ -19,10 +18,8 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Web3Provider>
-          {children}
-        </Web3Provider>
+      <body className={`${inter.className} min-h-screen`}>
+        {children}
       </body>
     </html>
   )

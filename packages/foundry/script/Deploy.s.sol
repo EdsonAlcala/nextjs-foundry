@@ -2,11 +2,13 @@
 pragma solidity ^0.8.19;
 
 import {SimpleStorage} from "../contracts/SimpleStorage.sol";
+import {DeployBase} from "./DeployBase.s.sol";
 
-import "forge-std/Script.sol";
+import {console} from "forge-std/Console.sol";
 
-contract DeployScript is Script {
+contract DeployScript is DeployBase {
     string constant DEFAULT_MNEMONIC = "test test test test test test test test test test test junk";
+    uint256 constant DEFAULT_STORAGE_VALUE = 100 ether;
 
     function run() external {
         string memory mnemonic = vm.envString("MNEMONIC");
@@ -20,11 +22,13 @@ contract DeployScript is Script {
 
         vm.startBroadcast(deployer);
 
-        SimpleStorage simpleStorage = new SimpleStorage();
+        SimpleStorage simpleStorage = new SimpleStorage(DEFAULT_STORAGE_VALUE);
         console.logString(string.concat("SimpleStorage deployed at: ", vm.toString(address(simpleStorage))));
 
         vm.stopBroadcast();
 
-        // export deployment
+        _startExport();
+        _addExport("SimpleStorage", address(simpleStorage));
+        _stopExport();
     }
 }

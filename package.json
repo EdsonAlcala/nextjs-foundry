@@ -7,11 +7,9 @@
     "packages/*"
   ],
   "scripts": {
-    "chain": "yarn workspace foundry run chain",
-    "dev": "yarn workspaces -pt run dev",
-    "build": "yarn workspaces -pt run build",
-    "test": "yarn workspaces -pt run test",
-    "deploy": "yarn workspace foundry run deploy"
+    "chain": "source .env && yarn workspace foundry run chain",
+    "deploy": "source .env && yarn workspace foundry run deploy",
+    "dev": "source .env && yarn workspace next run dev"
   },
   "dependencies": {},
   "devDependencies": {}

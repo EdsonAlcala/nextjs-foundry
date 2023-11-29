@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { WagmiConfig, configureChains, createConfig } from 'wagmi'
-import { base, baseGoerli } from 'wagmi/chains'
+import { base, baseGoerli, localhost } from 'wagmi/chains'
 import { alchemyProvider } from 'wagmi/providers/alchemy'
 import { publicProvider } from 'wagmi/providers/public'
 
@@ -10,7 +10,7 @@ import { getDefaultWallets, RainbowKitProvider, connectorsForWallets } from '@ra
 import { injectedWallet, argentWallet } from '@rainbow-me/rainbowkit/wallets';
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
-    [baseGoerli, base],
+    [baseGoerli, base, { ...localhost, chainId: process.env.NEXT_PUBLIC_CHAIN_ID || 31337 }],
     [alchemyProvider({ apiKey: process.env.NEXT_PUBLIC_ALCHEMY_ID || "" }), publicProvider()],
 )
 

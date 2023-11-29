@@ -20,7 +20,7 @@ base = "https://mainnet.base.org"
 baseGoerli = "https://goerli.base.org"
 
 [etherscan]
-baseGoerli = { key = "${ETHERSCAN_API_KEY}" }
-base = { key = "${ETHERSCAN_API_KEY}" }
+baseGoerli = { key = "${BASESCAN_API_KEY}", url = "https://api-goerli.basescan.org/api" }
+base = { key = "${BASESCAN_API_KEY}", url = "https://api.basescan.org/api" }
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options

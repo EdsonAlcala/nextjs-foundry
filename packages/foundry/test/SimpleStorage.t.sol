@@ -7,9 +7,10 @@ import {SimpleStorage} from "@contracts/SimpleStorage.sol";
 
 contract SimpleStorageTest is Test {
     SimpleStorage simpleStorage;
+    uint256 constant DEFAULT_STORAGE_VALUE = 1000 ether;
 
     function setUp() public {
-        simpleStorage = new SimpleStorage();
+        simpleStorage = new SimpleStorage(DEFAULT_STORAGE_VALUE);
     }
 
     function test_setData() public {
