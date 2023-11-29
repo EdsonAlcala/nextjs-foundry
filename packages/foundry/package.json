@@ -3,6 +3,7 @@
     "version": "0.0.1",
     "private": true,
     "scripts": {
+        "install": "forge install",
         "compile": "forge compile",
         "lint": "forge fmt",
         "test": "forge test",
