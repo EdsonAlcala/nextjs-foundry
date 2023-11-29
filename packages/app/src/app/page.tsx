@@ -1,6 +1,6 @@
 import Web3Provider from '@app/web3/provider';
 
-import Main from '@app/views/Main';
+import Main from '@app/components/Main';
 import NavBar from '@app/components/NavBar';
 
 export default function Home() {

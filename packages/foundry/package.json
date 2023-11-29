@@ -7,7 +7,7 @@
         "lint": "forge fmt",
         "test": "forge test",
         "dev": "forge compile",
-        "chain": "anvil -m \"$MNEMONIC\" --chain-id \"$NEXT_PUBLIC_CHAIN_ID\"",
+        "chain": "anvil -m \"$MNEMONIC\" --chain-id \"$CHAIN_ID\"",
         "deploy": "forge script script/Deploy.s.sol --rpc-url http://localhost:8545 --broadcast"
     },
     "devDependencies": {},
