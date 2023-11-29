@@ -81,7 +81,19 @@ yarn dev
 
 ## Automatic React hooks generation
 
-This boilerplate contains a `Wagmi` integration that automatically generates `React hooks`, so you don't need to copy ABIs anymore or addresses from your deployed contracts.
+This boilerplate contains a `Wagmi` integration that automatically generates `React hooks`, so you don't need to copy ABIs anymore or addresses from your deployed contracts. You can see an example in `app/src/views/ConnectedView.tsx`, where we read the value of the `storedData` of the `SimpleStorage` contract via:
+
+```Typescript
+const { data: simpleStorageValue } = useSimpleStorageRead({
+  functionName: 'storedData'
+})
+```
+
+Notice the hook import:
+
+```Typescript
+import { useSimpleStorageRead } from '@app/generated'
+```
 
 The hooks generated are in the `app/src/generated.ts` file. You can customise this output path in the `wagmi.config.ts`.
 
