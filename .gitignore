@@ -41,5 +41,9 @@ next-env.d.ts
 **/foundry/out/
 **/foundry/.env
 
+# we ignore local forge files
+**/foundry/broadcast/Deploy.s.sol/31337
+**/foundry/deployments/deploymentAddresses.json
+
 # general
 TODO.*
