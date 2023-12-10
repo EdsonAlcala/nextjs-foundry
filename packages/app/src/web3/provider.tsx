@@ -11,7 +11,7 @@ import { injectedWallet, argentWallet } from '@rainbow-me/rainbowkit/wallets';
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
     [baseGoerli, base, { ...localhost, chainId: process.env.NEXT_PUBLIC_CHAIN_ID || 31337 }],
-    [alchemyProvider({ apiKey: process.env.NEXT_PUBLIC_ALCHEMY_ID || "" }), publicProvider()],
+    [alchemyProvider({ apiKey: process.env.NEXT_PUBLIC_ALCHEMY_API_KEY || "" }), publicProvider()],
 )
 
 const PROJECT_ID = process.env.NEXT_PUBLIC_WALLET_CONNECT_ID || "";
