@@ -8,7 +8,6 @@ This boilerplate is designed to work with the following stack:
 - [Next.js] - Next.js 14.0.2, with App router
 - [Anvil]
 - [RainbowKit]
-- [Op-Wagmi]
 
 ## Features
 
